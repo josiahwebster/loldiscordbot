@@ -21,6 +21,7 @@ impl LeagueClient {
 
     }
 
+    
     pub async fn get_recent_matches(&self, match_count: i32) -> Result<Summoner, Error> {
 
         let url = format!("https:///{}", self.region);
